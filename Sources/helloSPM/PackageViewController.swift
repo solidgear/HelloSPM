@@ -2,7 +2,7 @@ import UIKit
 
 public class PackageViewController: UIViewController {
     
-    public weak var delegate: ResultDelegate?
+    public weak var delegate: HelloSPMResultDelegate?
        
         //MARK: - UI Elements
     
@@ -70,7 +70,7 @@ public class PackageViewController: UIViewController {
        }
     
     //MARK: Protocols
-    public protocol ResultDelegate: class {
+    public protocol HelloSPMResultDelegate: class {
        func returnName(_ name: String)
     }
 
